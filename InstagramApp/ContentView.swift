@@ -6,24 +6,30 @@
 //
 
 import SwiftUI
-
+// Global Usage Values
+var rect = UIScreen.main.bounds
+var edges = UIApplication.shared.windows.first?.safeAreaInsets
 struct ContentView: View {
+    
+    @State var offset: CGFloat = rect.width
+
     var body: some View {
-        VStack(spacing: 0.0) {
-            Header()
+        // Scrollable Tabs
+        GeometryReader { reader in
             
-            ScrollView(.vertical, showsIndicators: false) {
-                Stories()
+            let frame = reader.frame(in: .global)
+            // Since there are three Views
+            
+            ScrollableTabBar(tabs: ["", "", ""], rect: frame, offset: $offset) {
+                PostView(offset: $offset)
                 
-                Divider()
+                Home(offset: $offset)
                 
-                Post()
-                
-                Post(image: "star", description: "This is the future of humanity, from me to you.")
+                DirectView(offset: $offset)
             }
-            
-            TabBar()
+        
         }
+        .ignoresSafeArea()
     }
 }
 
