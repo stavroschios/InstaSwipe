@@ -9,6 +9,7 @@ New features added:
 -Like
 -Stories
 -Pinch to zoom
+
 ![](https://media.giphy.com/media/sYU5KlntlFkPhYlHAm/giphy.gif)
 
 # V1
