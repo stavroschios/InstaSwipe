@@ -11,6 +11,6 @@ New features added:
 -Pinch to zoom
 
 ![](https://media.giphy.com/media/sYU5KlntlFkPhYlHAm/giphy.gif)
-
+![](https://media.giphy.com/media/W0eLkSTJoCZp1JPvF0/giphy.gif)
 # V1
 ![Alt text](https://media.giphy.com/media/h6CcF2oCtxKGOgL9lA/giphy.gif)
